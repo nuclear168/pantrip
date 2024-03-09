@@ -6,43 +6,43 @@ const Feeds = () => {
   const products = [
     {
       id: 1,
-      name: 'Earthen Bottle',
+      name: 'ชวนแชร์ปัญหาผิวเป็นสิวและวิธีการดูแลของคุณ ลุ้นรับเซรั่มใหม่ล่าสุดจากไบโอเดอร์มา! 100 รางวัล',
       href: '#',
       price: '$48',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
       id: 2,
-      name: 'Nomad Tumbler',
+      name: 'ทำยังไงเมื่อโดนรุ่นพี่ขอเป็น FWB และเราปฏิเสธ แต่ยังต้องทำงานด้วยกันต่อ',
       href: '#',
       price: '$35',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-      imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
       id: 3,
-      name: 'Focus Paper Refill',
+      name: 'เชียร์สด ! แบดมินตัน YONEX French Open 2024 : รอบรองชนะเลิศ (9 มี.ค. 67) (คู่แรกเวลา 16.00 น.)',
       href: '#',
       price: '$89',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-      imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
       id: 4,
-      name: 'Machined Mechanical Pencil',
+      name: 'อะไรคือ จุดอ่อนที่ทำให้กระแสตีกลับของละคร ลออจันทร์ ดวงใจเทวพรหม',
       href: '#',
       price: '$35',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
       id: 5,
-      name: 'Focus Card Tray',
+      name: 'ทำไมคาริน่าเป็นคนเดียวในวงที่ไม่รับเเบรนด์เเอมเเฟชั่นเสื้อผ้าครับ?',
       href: '#',
       price: '$64',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg',
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
       id: 6,
@@ -50,23 +50,23 @@ const Feeds = () => {
       href: '#',
       price: '$39',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg',
-      imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
       id: 7,
-      name: 'Brass Scissors',
+      name: 'ลูก30ปีกับ15ปีผมของไม่ยอมเรียนไม่ยอมทำงาน ผมเตรียมทรัพย์32ล้านให้จะพอไหมครับ',
       href: '#',
       price: '$50',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg',
-      imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
       id: 8,
-      name: 'Focus Carry Pouch',
+      name: 'ร้านรับเฉพาะเงินสด กับ ร้านไม่รับเงินสด ตอนนี้ แบบไหนเยอะกว่ากัน',
       href: '#',
       price: '$32',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
   ]
 
@@ -82,12 +82,11 @@ const Feeds = () => {
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src={product.imageSrc}
-                  alt={product.imageAlt}
+                  alt={product.nimDetail}
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
               </div>
-              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+              <h3 className="mt-4 text-[12px] text-gray-900">{product.name}</h3>
             </a>
           ))}
         </div>

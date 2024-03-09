@@ -13,151 +13,112 @@ import usePreventBodyScroll from "./usePreventBodyScroll";
 const Reels = () => {
   const roomPantip = [
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ชีวิตคู่ชีวิตตัวจริง"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ชีวิตคู่ชีวิตตัวจริง",
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "กิน - ที่ไหนดี"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "กิน - ที่ไหนดี",
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ท่องเที่ยว สนุกทั้งทวีป"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ท่องเที่ยว สนุกทั้งทวีป",
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "การ์ตูน & อนิเมะ"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "การ์ตูน & อนิเมะ",
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "กีฬา"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "กีฬา",
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "กล้อง ภาพถ่าย ดีไซน์"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "กล้อง ภาพถ่าย ดีไซน์",
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ไอที"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ไอที",
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "เกม"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "เกม",
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "คอมพิวเตอร์"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "คอมพิวเตอร์",
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "โทรศัพท์มือถือ"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "โทรศัพท์มือถือ",
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "การศึกษา การเรียน"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "การศึกษา การเรียน",
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "สุขภาพ"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "สุขภาพ",
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ความงาม แฟชั่น"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ความงาม แฟชั่น",
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "หนัง ตามหนัง และดูหนัง"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "หนัง ตามหนัง และดูหนัง",
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ความรัก"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ความรัก",
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "สังคม"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "สังคม",
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "เล่นเกมออนไลน์"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "เล่นเกมออนไลน์",
+      nimDetail: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "การออกกำลังกาย"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "การออกกำลังกาย",
+      nimDetail: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ดนตรี"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ดนตรี",
+      nimDetail: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-      icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-      </svg>
-      ,
-      name: "ความรู้สึก ความคิดเห็น"
+      icon: <img src='https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg' className="h-full w-full rounded-lg object-cover object-center group-hover:opacity-75" />,
+      name: "ความรู้สึก ความคิดเห็น",
+      nimDetail: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
   ]
 
   const getItems = roomPantip.map((room, ind) => ({
     id: ind,
     icon: room.icon,
-    name: room.name
+    name: room.name,
+    nimDetail: room.nimDetail
   }));
 
   const [items] = useState(getItems);
@@ -180,17 +141,19 @@ const Reels = () => {
 
   return (
     <div className="pt-5">
+      <h2 className='px-8 font-bold'>Reels Pantip</h2>
       <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
         <ScrollMenu
           LeftArrow={LeftArrow}
           RightArrow={RightArrow}
           onWheel={onWheel}
         >
-          {items.map(({ id, name, icon }) => (
+          {items.map(({ id, name, icon, nimDetail }) => (
             <ReelsCategory
               icon={icon}
               title={id}
               name={name}
+              nimDetail={nimDetail}
               itemId={id} // NOTE: itemId is required for track items
               key={id}
             />

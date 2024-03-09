@@ -23,6 +23,8 @@ const Sidebar = () => {
 
   return (
     <div className='text-[12px]'>
+      <img src='https://upload.wikimedia.org/wikipedia/th/c/c5/Pantip_Logo.png' />
+      <br />
       {mapListSidebar}
     </div>
   )
